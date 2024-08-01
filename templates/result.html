@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Test Script</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Generated Test Script</h1>
+        <h2>File Name: {{ file_name }}</h2>
+        <h3>Generated Code:</h3>
+        <textarea rows="20" cols="80" readonly>{{ content }}</textarea>
+        <br><br>
+        <a href="{{ url_for('download', filename=file_name) }}" download>Download {{ file_name }}</a>
+        <br><br>
+        <button onclick="copyCode()">Copy Code</button>
+        <script>
+            function copyCode() {
+                const code = document.querySelector('textarea').value;
+                navigator.clipboard.writeText(code).then(() => {
+                    alert('Code copied to clipboard!');
+                });
+            }
+        </script>
+    </div>
+</body>
+</html>

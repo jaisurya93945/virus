@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Test Script Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Safe Test Script Generator</h1>
+        <form action="/generate" method="post">
+            <label for="level">Select Risk Level:</label>
+            <select name="level" id="level">
+                <option value="basic">Basic</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <br><br>
+            <label for="format">Select File Format:</label>
+            <select name="format" id="format">
+                <option value=".py">.py</option>
+                <option value=".bash">.bash</option>
+                <option value=".exe">.exe</option>
+            </select>
+            <br><br>
+            <button type="submit">Generate Test Script</button>
+        </form>
+    </div>
+</body>
+</html>

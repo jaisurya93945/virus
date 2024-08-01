@@ -1,0 +1,64 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    text-align: center;
+    padding: 50px;
+    background-image: url('bg.gif');
+    background-repeat: no-repeat;
+    background-size: cover; /* This makes the GIF cover the entire background */
+    background-attachment: fixed; /* This makes the background stay in place when scrolling */
+}
+
+.container {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    display: inline-block;
+}
+
+h1, h2, h3 {
+    color: #ff0000;
+}
+
+form, textarea {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    border: 1px solid #ff0000;
+}
+
+button {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #ff0000;
+    color: #f8f8f2;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d40000;
+}
+
+textarea {
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+}
